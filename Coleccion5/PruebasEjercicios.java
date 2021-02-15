@@ -10,11 +10,12 @@ public class PruebasEjercicios {
 		System.out.println("El número de dígitos que tiene la cifra es " + Coleccion5.contarCifras(55555));
 		Coleccion5.devolverCambio(5.10);
 		System.out.println(Coleccion5.cuentaPalabras(" Hola como estas"));
-		Coleccion5.ordenar3Numeros(7.78 ,2.5, 0);
+		Coleccion5.ordenar3Numeros(2.5 ,7.25, 0);
 		Coleccion5.apostarQuiniela();
 		Coleccion5.lanzarMoneda(1001);
-		
-		String primosMutuos;
+		Coleccion5.desplazarLetras("Hola Como Estas", 3);
+		Coleccion5.desplazarLetras2("KRODFRPRHVWDV", 3);
+		String primosMutuos; 
 		primosMutuos = Coleccion5.primosMutuos(5, 7)? "Son primos Mutuos": "No son primos mutuos";
 		System.out.println(primosMutuos);
 		

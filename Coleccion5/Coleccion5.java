@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -143,6 +142,40 @@ public class Coleccion5 {
 
 	}
 
+	public static void desplazarLetras(String frase, int desplazamientos) {
+		String fraseToUpper = frase.toUpperCase();
+		StringBuilder cifrado = new StringBuilder();
+		int desplazamiento = desplazamientos % 26;
+		for (int i = 0; i < fraseToUpper.length(); i++) {
+			if (fraseToUpper.charAt(i) >= 'A' && fraseToUpper.charAt(i) <= 'Z') {
+                if ((fraseToUpper.charAt(i) + desplazamiento) > 'Z') {
+                    cifrado.append((char) (fraseToUpper.charAt(i) + desplazamiento - 26));
+                } else {
+                    cifrado.append((char) (fraseToUpper.charAt(i) + desplazamiento));
+                }
+			}
+		}
+		
+		System.out.println(cifrado.toString());
+	}
+	
+	public static void desplazarLetras2(String frase, int desplazamientos) {
+		String fraseToUpper = frase.toUpperCase();
+		StringBuilder cifrado = new StringBuilder();
+		int desplazamiento = desplazamientos % 26;
+		for (int i = 0; i < fraseToUpper.length(); i++) {
+			if (fraseToUpper.charAt(i) >= 'A' && fraseToUpper.charAt(i) <= 'Z') {
+                if ((fraseToUpper.charAt(i) - desplazamiento) < 'A') {
+                    cifrado.append((char) (fraseToUpper.charAt(i) - desplazamiento + 26));
+                } else {
+                    cifrado.append((char) (fraseToUpper.charAt(i) - desplazamiento));
+                }
+			}
+		}
+		
+		System.out.println(cifrado.toString());
+	}
+	
 	public static int maximoComun(int m, int n) {
 		int resto;
 		if (m > n)
