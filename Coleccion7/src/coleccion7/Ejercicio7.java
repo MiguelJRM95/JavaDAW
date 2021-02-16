@@ -5,17 +5,18 @@ import java.util.Arrays;
 public class Ejercicio7 {
 	static double[][] multiplicarMatrices (double[][] A, double [][] B){
 		double[][] matrizMultiplicada = new double[A.length][B[0].length];
-		for (int i = 0; i < A.length; i++) {
-			for (int j = 0; j < B[i].length; j++) {
-				
-				for (int k = 0; k < A[0].length-1; k++) {
-					matrizMultiplicada[i][j] += A[i][k] * B[k][j];
+		if(A[0].length == B.length) {
+			for (int i = 0; i < A.length; i++) {
+				for (int j = 0; j < B[0].length; j++) {	
+					for (int k = 0; k < A[0].length; k++) {
+						matrizMultiplicada[i][j] += A[i][k] * B[k][j];
+					}
 				}
 			}
+		}else {
+			matrizMultiplicada = null;
 		}
-		
-		return matrizMultiplicada;
-		
+		return matrizMultiplicada;		
 	}
 	
 	public static void main(String[] args) {
