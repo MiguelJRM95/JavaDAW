@@ -23,7 +23,7 @@ public class Ejercicio12 {
 	 * @param porcentaje
 	 * @return imagenOscura ===> Si es oscura devuelve true, si es mas clara devuelve false
 	 */
-	static boolean esOscura(int[][] matriz,  int umbral, double porcentaje) {
+	static boolean esOscura(int[][] matriz,  int umbral, double porcentaje) throws IllegalArgumentException {
 		boolean imagenOscura = false;
 		boolean checkPassed = false;
 		//COMPROBACIONES
