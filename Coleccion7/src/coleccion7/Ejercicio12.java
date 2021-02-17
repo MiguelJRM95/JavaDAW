@@ -1,5 +1,17 @@
 package coleccion7;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.sql.Date;
+
+import org.junit.Test;
+
+import banco.CuentaCorriente;
+import banco.MovimientoCuenta;
+import banco.SinSaldoException;
+import banco.TransferenciaHilo;
+
 /**
  * @author Miguel Rodríguez Martinez
  *
@@ -49,7 +61,7 @@ public class Ejercicio12 {
 				checkPassed = true;
 			}else {
 				/**
-				 * @exception Si surge cualquier error desconocido se avisa al usuario y se cierra el programa
+				 * @error Si surge cualquier error desconocido se avisa al usuario y se cierra el programa
 				 */
 				System.err.println("Error, el programa ha finalizado por un error desconocido");
 				System.exit(0);
