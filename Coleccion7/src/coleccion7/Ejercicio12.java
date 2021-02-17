@@ -84,14 +84,5 @@ public class Ejercicio12 {
 		}
 		return imagenOscura;
 	}
-	
-	public static void main(String[] args) {
-		int[][] matriz = {{0,0,50,50,100,100},{0,0,50,50,100,100},{0,0,50,50,100,100},{150,150,150,200,200,200},{150,150,150,200,200,200},{150,150,150,200,200,200}};
-		System.out.println(esOscura(matriz, 200, 50.0));
-		System.out.println(esOscura(matriz, 200, 80.0));
-		System.out.println(esOscura(matriz, 150, 50.0));
-		System.out.println(esOscura(matriz, 150, 51.0));
-	}
-
 }
 
