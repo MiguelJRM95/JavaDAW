@@ -1,16 +1,5 @@
 package coleccion7;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
-import java.sql.Date;
-
-import org.junit.Test;
-
-import banco.CuentaCorriente;
-import banco.MovimientoCuenta;
-import banco.SinSaldoException;
-import banco.TransferenciaHilo;
 
 /**
  * @author Miguel Rodríguez Martinez
